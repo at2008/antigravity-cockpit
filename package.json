@@ -1,0 +1,126 @@
+{
+  "name": "antigravity-cockpit-multi-account",
+  "displayName": "Antigravity Multi-Account Cockpit",
+  "description": "Antigravity 账号与配额管理助手",
+  "version": "0.1.2",
+  "publisher": "Wanow",
+  "icon": "resources/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/at2008/antigravity-cockpit.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-cockpit.refreshAccounts",
+        "title": "刷新账号列表",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "antigravity-cockpit.switchAccount",
+        "title": "切换账号"
+      },
+      {
+        "command": "antigravity-cockpit.refreshAccount",
+        "title": "刷新此账号"
+      },
+      {
+        "command": "antigravity-cockpit.refreshAllAccounts",
+        "title": "刷新所有账号"
+      },
+      {
+        "command": "antigravity-cockpit.openDashboard",
+        "title": "打开账号管理面板"
+      },
+      {
+        "command": "antigravity-cockpit.addAccount",
+        "title": "添加账号",
+        "icon": "$(add)"
+      },
+      {
+        "command": "antigravity-cockpit.openSwitchLogs",
+        "title": "打开账号切换日志目录"
+      },
+      {
+        "command": "antigravity-cockpit.diagnoseEnvironment",
+        "title": "环境自检"
+      }
+    ],
+    "configuration": {
+      "title": "Antigravity Cockpit",
+      "properties": {
+        "antigravity-cockpit.autoRefreshInterval": {
+          "type": "integer",
+          "default": 5,
+          "minimum": 1,
+          "maximum": 60,
+          "description": "自动刷新账户配额信息的时间间隔（分钟）。设置为 0 禁用自动刷新。"
+        },
+        "antigravity-cockpit.switchMode": {
+          "type": "string",
+          "enum": [
+            "safe",
+            "advanced"
+          ],
+          "default": "advanced",
+          "description": "账号切换模式：safe 仅切换插件内当前账号并提示手动重启 IDE；advanced 会调用外部代理进程执行 Kill → 注入数据库 → 自动重启 IDE 的完整流程。"
+        },
+        "antigravity-cockpit.databasePathOverride": {
+          "type": "string",
+          "default": "",
+          "description": "Antigravity IDE 全局状态数据库路径覆盖（留空则使用平台默认路径）。示例：C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb"
+        },
+        "antigravity-cockpit.antigravityExecutablePath": {
+          "type": "object",
+          "properties": {
+            "win32": {
+              "type": "string",
+              "default": "",
+              "description": "Windows 平台 Antigravity.exe 路径覆盖（留空则使用默认路径 LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe）"
+            },
+            "darwin": {
+              "type": "string",
+              "default": "",
+              "description": "macOS 平台 Antigravity.app 路径覆盖（留空则使用默认路径 /Applications/Antigravity.app）"
+            },
+            "linux": {
+              "type": "string",
+              "default": "",
+              "description": "Linux 平台 Antigravity 可执行文件路径覆盖（留空则尝试多个常见路径）"
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.1.3",
+    "eslint": "^8.41.0",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@typescript-eslint/eslint-plugin": "^5.59.8"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "sqlite3": "^5.1.6"
+  }
+}
