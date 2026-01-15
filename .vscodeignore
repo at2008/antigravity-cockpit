@@ -1,0 +1,13 @@
+.vscode/**
+.vscode-test/**
+out/test/**
+src/**
+.gitignore
+.editorconfig
+tsconfig.json
+vsc-extension-quickstart.md
+.git/**
+*.vsix
+node_modules/**
+# 如果你使用了打包工具（如 webpack/esbuild），通常只需要打包后的文件
+# 如果没有打包工具，vsce 会尝试包含 dependencies，但我们还是建议显式排除不必要文件
