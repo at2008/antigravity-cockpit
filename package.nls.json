@@ -1,0 +1,19 @@
+{
+    "extension.description": "Antigravity multi-account switching and quota management assistant",
+    "command.refreshAccounts": "Refresh Account List",
+    "command.switchAccount": "Switch Account",
+    "command.refreshAccount": "Refresh This Account",
+    "command.refreshAllAccounts": "Refresh All Accounts",
+    "command.openDashboard": "Open Account Management Panel",
+    "command.addAccount": "Add Account",
+    "command.openSwitchLogs": "Antigravity Cockpit: Open Account Switching Logs Directory",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: Environment Diagnosis",
+    "config.autoRefreshInterval.description": "Time interval (minutes) for automatic account quota info refresh. Set to 0 to disable automatic refresh.",
+    "config.switchMode.description": "Account switching mode: 'safe' only switches the current account in the plugin and prompts for manual IDE restart; 'advanced' calls an external proxy process to perform Kill → Database Injection → Automatic IDE Restart flow.",
+    "config.databasePathOverride.description": "Global status database path override for Antigravity IDE (leave empty for platform default). Example: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Antigravity.exe path override for Windows (leave empty for default path LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Antigravity.app path override for macOS (leave empty for default path /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Antigravity executable path override for Linux (leave empty to try common paths)",
+    "config.processWaitSeconds.description": "Time to wait (seconds) for process closing/starting during account switching. Recommended 20-30 seconds for lower-end machines.",
+    "config.language.description": "Interface language: 'auto' follows VS Code settings, 'zh-cn' for Simplified Chinese, 'en' for English."
+}
