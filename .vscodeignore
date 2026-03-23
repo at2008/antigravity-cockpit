@@ -1,0 +1,24 @@
+.vscode/**
+.vscode-test/**
+out/test/**
+src/**
+.gitignore
+.editorconfig
+tsconfig.json
+vsc-extension-quickstart.md
+.git/**
+.github/**
+*.vsix
+
+# 开发/文档/脚本目录 — 不需要打包进插件
+.agent/**
+docs/**
+conversation_records/**
+scripts/**
+
+# 其他非必要文件
+build.bat
+*.code-workspace
+PROJECT_CONTEXT.md
+package-lock.json
+
