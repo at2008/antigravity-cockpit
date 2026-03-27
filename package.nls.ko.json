@@ -1,0 +1,19 @@
+{
+    "extension.description": "Antigravity 다중 계정 전환 및 쿼터 관리 도우미",
+    "command.refreshAccounts": "계정 목록 새로고침",
+    "command.switchAccount": "계정 전환",
+    "command.refreshAccount": "이 계정 새로고침",
+    "command.refreshAllAccounts": "모든 계정 새로고침",
+    "command.openDashboard": "계정 관리 패널 열기",
+    "command.addAccount": "계정 추가",
+    "command.openSwitchLogs": "Antigravity Cockpit: 계정 전환 로그 디렉토리 열기",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: 환경 진단 실행",
+    "config.autoRefreshInterval.description": "계정 쿼터 정보를 자동으로 새로고침하는 간격(분). 0으로 설정하면 자동 새로고침이 비활성화됩니다.",
+    "config.switchMode.description": "계정 전환 모드: 'safe'는 플러그인 내의 현재 계정만 전환하고 수동 IDE 재시작을 권장합니다. 'advanced'는 외부 프록시 프로세스를 호출하여 프로세스 종료 → 데이터베이스 주입 → IDE 자동 재시작 흐름을 실행합니다.",
+    "config.databasePathOverride.description": "Antigravity IDE의 글로벌 상태 데이터베이스 경로를 덮어씁니다 (기본값을 사용하려면 비워 두세요). 예: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Windows용 Antigravity.exe 경로 재정의 (기본 경로 LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe를 사용하려면 비워 두세요)",
+    "config.antigravityExecutablePath.darwin.description": "macOS용 Antigravity.app 경로 재정의 (기본 경로 /Applications/Antigravity.app를 사용하려면 비워 두세요)",
+    "config.antigravityExecutablePath.linux.description": "Linux용 Antigravity 실행 파일 경로 재정의 (기본값을 사용하려면 비워 두세요)",
+    "config.processWaitSeconds.description": "계정 전환 중 프로세스 종료/시작을 대기하는 시간(초). 저사양 기기에서는 20-30초를 권장합니다.",
+    "config.language.description": "인터페이스 언어: 'auto'는 VS Code 설정을 따르며, 'zh-cn'은 간체 중국어, 'en'은 영어, 'ja'는 일본어, 'ko'는 한국어입니다."
+}

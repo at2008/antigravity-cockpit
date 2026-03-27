@@ -1,0 +1,172 @@
+{
+  "name": "antigravity-cockpit-multi-account",
+  "displayName": "Antigravity Multi-Account Cockpit",
+  "description": "%extension.description%",
+  "version": "5.0.0",
+  "publisher": "Wanow",
+  "icon": "resources/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/at2008/antigravity-cockpit.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-cockpit.refreshAccounts",
+        "title": "%command.refreshAccounts%",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "antigravity-cockpit.switchAccount",
+        "title": "%command.switchAccount%"
+      },
+      {
+        "command": "antigravity-cockpit.refreshAccount",
+        "title": "%command.refreshAccount%"
+      },
+      {
+        "command": "antigravity-cockpit.refreshAllAccounts",
+        "title": "%command.refreshAllAccounts%"
+      },
+      {
+        "command": "antigravity-cockpit.openDashboard",
+        "title": "%command.openDashboard%"
+      },
+      {
+        "command": "antigravity-cockpit.addAccount",
+        "title": "%command.addAccount%",
+        "icon": "$(add)"
+      },
+      {
+        "command": "antigravity-cockpit.openSwitchLogs",
+        "title": "%command.openSwitchLogs%"
+      },
+      {
+        "command": "antigravity-cockpit.diagnoseEnvironment",
+        "title": "%command.diagnoseEnvironment%"
+      },
+      {
+        "command": "antigravity-cockpit.loginWithToken",
+        "title": "Antigravity: Login with Refresh Token",
+        "icon": "$(key)"
+      },
+      {
+        "command": "antigravity-cockpit.exportToken",
+        "title": "Antigravity: Export Refresh Token",
+        "icon": "$(export)"
+      },
+      {
+        "command": "antigravity-cockpit.batchExportTokens",
+        "title": "Antigravity: Batch Export All Tokens",
+        "icon": "$(export)"
+      },
+      {
+        "command": "antigravity-cockpit.batchImportTokens",
+        "title": "Antigravity: Batch Import Tokens",
+        "icon": "$(import)"
+      }
+    ],
+    "configuration": {
+      "title": "Antigravity Multi-Account Cockpit",
+      "properties": {
+        "antigravity-cockpit.autoRefreshInterval": {
+          "type": "integer",
+          "default": 5,
+          "minimum": 1,
+          "maximum": 60,
+          "description": "%config.autoRefreshInterval.description%"
+        },
+        "antigravity-cockpit.switchMode": {
+          "type": "string",
+          "enum": [
+            "safe",
+            "advanced"
+          ],
+          "default": "advanced",
+          "description": "%config.switchMode.description%"
+        },
+        "antigravity-cockpit.databasePathOverride": {
+          "type": "string",
+          "default": "",
+          "description": "%config.databasePathOverride.description%"
+        },
+        "antigravity-cockpit.antigravityExecutablePath": {
+          "type": "object",
+          "properties": {
+            "win32": {
+              "type": "string",
+              "default": "",
+              "description": "%config.antigravityExecutablePath.win32.description%"
+            },
+            "darwin": {
+              "type": "string",
+              "default": "",
+              "description": "%config.antigravityExecutablePath.darwin.description%"
+            },
+            "linux": {
+              "type": "string",
+              "default": "",
+              "description": "%config.antigravityExecutablePath.linux.description%"
+            }
+          }
+        },
+        "antigravity-cockpit.processWaitSeconds": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 5,
+          "maximum": 60,
+          "description": "%config.processWaitSeconds.description%"
+        },
+        "antigravity-cockpit.language": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "zh-cn",
+            "zh-tw",
+            "en",
+            "ja",
+            "ko",
+            "ru",
+            "fr",
+            "es",
+            "de",
+            "it"
+          ],
+          "default": "auto",
+          "description": "Interface language: 'auto' follows VS Code settings, 'zh-cn' for Simplified Chinese, 'zh-tw' for Traditional Chinese, 'en' for English, 'ja' for Japanese, 'ko' for Korean, 'ru' for Russian, 'fr' for French, 'es' for Spanish, 'de' for German, 'it' for Italian."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vscode/vsce": "^2.19.0",
+    "eslint": "^8.41.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "sql.js": "^1.14.1"
+  }
+}

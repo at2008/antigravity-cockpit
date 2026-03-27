@@ -1,0 +1,19 @@
+{
+    "extension.description": "Antigravity マルチアカウント切り替えおよびクォータ管理アシスタント",
+    "command.refreshAccounts": "アカウント一覧を更新",
+    "command.switchAccount": "アカウントを切り替える",
+    "command.refreshAccount": "このアカウントを更新",
+    "command.refreshAllAccounts": "すべてのアカウントを更新",
+    "command.openDashboard": "アカウント管理パネルを開く",
+    "command.addAccount": "アカウントを追加",
+    "command.openSwitchLogs": "Antigravity Cockpit: アカウント切り替えログ・ディレクトリを開く",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: 環境診断を実行",
+    "config.autoRefreshInterval.description": "アカウントのクォータ情報を自動更新する間隔（分）。0に設定すると自動更新が無効になります。",
+    "config.switchMode.description": "アカウント切り替えモード：'safe' はプラグイン内の現在のアカウントのみを切り替え、手動でのIDE再起動を促します；'advanced' は外部プロキシプロセスを呼び出し、Kill → データベース注入 → IDEの自動再起動を実行します。",
+    "config.databasePathOverride.description": "Antigravity IDE のグローバルステータスデータベースのパスを上書きします（デフォルトを使用する場合は空のままにしてください）。例: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Windows 用 Antigravity.exe パスのオーバーライド（デフォルト LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe を使用する場合は空のままにしてください）",
+    "config.antigravityExecutablePath.darwin.description": "macOS 用 Antigravity.app パスのオーバーライド（デフォルト /Applications/Antigravity.app を使用する場合は空のままにしてください）",
+    "config.antigravityExecutablePath.linux.description": "Linux 用 Antigravity 実行ファイルパスのオーバーライド（デフォルトを使用する場合は空のままにしてください）",
+    "config.processWaitSeconds.description": "アカウント切り替え時にプロセスの停止・開始を待機する時間（秒）。低スペックのマシンの場合は20〜30秒を推奨します。",
+    "config.language.description": "インターフェース言語：'auto' は VS Code の設定に従い、'zh-cn' は簡体中国語、'en' は英語、'ja' は日本語となります。"
+}
