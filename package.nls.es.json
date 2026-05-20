@@ -1,0 +1,19 @@
+{
+    "extension.description": "Asistente de cambio de múltiples cuentas de Antigravity y gestión de cuotas",
+    "command.refreshAccounts": "Actualizar lista de cuentas",
+    "command.switchAccount": "Cambiar de cuenta",
+    "command.refreshAccount": "Actualizar esta cuenta",
+    "command.refreshAllAccounts": "Actualizar todas las cuentas",
+    "command.openDashboard": "Abrir panel de gestión de cuentas",
+    "command.addAccount": "Añadir cuenta",
+    "command.openSwitchLogs": "Antigravity Cockpit: Abrir directorio de registros de cambios de cuenta",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: Realizar diagnóstico del entorno",
+    "config.autoRefreshInterval.description": "Intervalo de tiempo (minutos) para la actualización automática de la información de cuota de las cuentas. Establezca en 0 para desactivar la actualización automática.",
+    "config.switchMode.description": "Modo de cambio de cuenta: 'safe' solo cambia la cuenta actual en el complemento y solicita el reinicio manual del IDE; 'advanced' llama a un proceso proxy externo para realizar el flujo Kill → Inyección de base de datos → Reinicio automático del IDE.",
+    "config.databasePathOverride.description": "Sobrescritura de la ruta de la base de datos de estado global para el IDE Antigravity (dejar vacío para la ruta predeterminada de la plataforma). Ejemplo: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Sobrescritura de la ruta Antigravity.exe para Windows (dejar vacío para la ruta predeterminada LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Sobrescritura de la ruta Antigravity.app para macOS (dejar vacío para la ruta predeterminada /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Sobrescritura de la ruta del ejecutable Antigravity para Linux (dejar vacío para probar rutas comunes)",
+    "config.processWaitSeconds.description": "Tiempo de espera (segundos) para el cierre/inicio del proceso durante el cambio de cuenta. Se recomiendan 20-30 segundos para máquinas de gama baja.",
+    "config.language.description": "Idioma de la interfaz: 'auto' sigue la configuración de VS Code, 'zh-cn' para chino simplificado, 'en' para inglés, 'ja' para japonés, 'ko' para coreerano, 'ru' para ruso, 'fr' para francés, 'es' para español."
+}

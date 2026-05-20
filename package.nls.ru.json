@@ -1,0 +1,19 @@
+{
+    "extension.description": "Помощник по переключению нескольких учетных записей Antigravity и управлению квотами",
+    "command.refreshAccounts": "Обновить список учетных записей",
+    "command.switchAccount": "Переключить учетную запись",
+    "command.refreshAccount": "Обновить эту учетную запись",
+    "command.refreshAllAccounts": "Обновить все учетные записи",
+    "command.openDashboard": "Открыть панель управления учетными записями",
+    "command.addAccount": "Добавить учетную запись",
+    "command.openSwitchLogs": "Antigravity Cockpit: Открыть каталог журналов переключения учетных записей",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: Выполнить диагностику среды",
+    "config.autoRefreshInterval.description": "Интервал времени (минуты) для автоматического обновления информации о квотах учетных записей. Установите 0, чтобы отключить автоматическое обновление.",
+    "config.switchMode.description": "Режим переключения учетных записей: 'safe' обновляет только текущую учетную запись в плагине и предлагает перезапустить IDE вручную; 'advanced' вызывает внешний прокси-процесс для выполнения потока Kill → Database Injection → Automatic IDE Restart.",
+    "config.databasePathOverride.description": "Переопределение пути к глобальной базе данных состояния Antigravity IDE (оставьте пустым для значения по умолчанию для платформы). Пример: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Переопределение пути к Antigravity.exe для Windows (оставьте пустым для пути по умолчанию LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Переопределение пути к Antigravity.app для macOS (оставьте пустым для пути по умолчанию /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Переопределение пути к исполняемому файлу Antigravity для Linux (оставьте пустым, чтобы использовать пути по умолчанию)",
+    "config.processWaitSeconds.description": "Время ожидания (секунды) завершения/запуска процесса при переключении учетной записи. Рекомендуется 20–30 секунд для менее мощных компьютеров.",
+    "config.language.description": "Язык интерфейса: 'auto' следует настройкам VS Code, 'zh-cn' для упрощенного китайского, 'en' для английского, 'ja' для японского, 'ko' для корейского, 'ru' для русского."
+}
