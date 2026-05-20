@@ -1,0 +1,19 @@
+{
+    "extension.description": "Assistant de commutation multi-compte Antigravity et de gestion des quotas",
+    "command.refreshAccounts": "Actualiser la liste des comptes",
+    "command.switchAccount": "Changer de compte",
+    "command.refreshAccount": "Actualiser ce compte",
+    "command.refreshAllAccounts": "Actualiser tous les comptes",
+    "command.openDashboard": "Ouvrir le panneau de gestion des comptes",
+    "command.addAccount": "Ajouter un compte",
+    "command.openSwitchLogs": "Antigravity Cockpit : Ouvrir le répertoire des journaux de commutation",
+    "command.diagnoseEnvironment": "Antigravity Cockpit : Exécuter le diagnostic de l'environnement",
+    "config.autoRefreshInterval.description": "Intervalle de temps (minutes) pour l'actualisation automatique des quotas des comptes. Réglez sur 0 pour désactiver l'actualisation automatique.",
+    "config.switchMode.description": "Mode de commutation : 'safe' change uniquement le compte actuel dans l'extension et demande un redémarrage manuel de l'IDE ; 'advanced' utilise un processus proxy externe pour effectuer le flux Kill → Database Injection → Redémarrage automatique de l'IDE.",
+    "config.databasePathOverride.description": "Surcharge du chemin de la base de données d'état globale de l'IDE Antigravity (laisser vide pour le chemin par défaut). Exemple : C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Surcharge du chemin Antigravity.exe pour Windows (laisser vide pour le chemin par défaut LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Surcharge du chemin Antigravity.app pour macOS (laisser vide pour le chemin par défaut /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Surcharge du chemin de l'exécutable Antigravity pour Linux (laisser vide pour les chemins par défaut)",
+    "config.processWaitSeconds.description": "Temps d'attente (secondes) pour la fermeture/le démarrage du processus lors du changement de compte. Recommandé 20-30 secondes pour les configurations modestes.",
+    "config.language.description": "Langue de l'interface : 'auto' suit les paramètres VS Code, 'zh-cn' pour le chinois simplifié, 'en' pour l'anglais, 'ja' pour le japonais, 'ko' pour le coréen, 'ru' pour le russe, 'fr' pour le français."
+}
