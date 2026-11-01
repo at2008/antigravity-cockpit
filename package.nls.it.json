@@ -1,0 +1,19 @@
+{
+    "extension.description": "Assistente per il cambio di più account Antigravity e per la gestione delle quote",
+    "command.refreshAccounts": "Aggiorna lista account",
+    "command.switchAccount": "Cambia account",
+    "command.refreshAccount": "Aggiorna questo account",
+    "command.refreshAllAccounts": "Aggiorna tutti gli account",
+    "command.openDashboard": "Apri il pannello di gestione degli account",
+    "command.addAccount": "Aggiungi account",
+    "command.openSwitchLogs": "Antigravity Cockpit: Apri la directory dei log di cambio account",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: Esegui la diagnosi dell'ambiente",
+    "config.autoRefreshInterval.description": "Intervallo di tempo (minuti) per l'aggiornamento automatico delle informazioni sulle quote. Impostare su 0 per disabilitare l'aggiornamento automatico.",
+    "config.switchMode.description": "Modalità di cambio account: 'safe' cambia solo l'account corrente nel plugin e richiede il riavvio manuale dell'IDE; 'advanced' richiama un processo proxy esterno per eseguire il flusso Kill → Iniezione del database → Riavvio automatico dell'IDE.",
+    "config.databasePathOverride.description": "Override del percorso del database di stato globale per l'IDE Antigravity (lasciare vuoto per il percorso predefinito della piattaforma). Esempio: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Override del percorso di Antigravity.exe per Windows (lasciare vuoto per il percorso predefinito LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Override del percorso di Antigravity.app per macOS (lasciare vuoto per il percorso predefinito /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Override del percorso dell'eseguibile Antigravity per Linux (lasciare vuoto per testare percorsi comuni)",
+    "config.processWaitSeconds.description": "Tempo di attesa (secondi) per la chiusura/avvio del processo durante il cambio account. Consigliato 20-30 secondi per macchine con prestazioni limitate.",
+    "config.language.description": "Lingua dell'interfaccia: 'auto' segue le impostazioni di VS Code, 'zh-cn' per il cinese semplificato, 'en' per l'inglese, 'ja' per il giapponese, 'ko' per il coreano, 'ru' per il russo, 'fr' per il francese, 'es' per lo spagnolo, 'de' per il tedesco, 'it' per l'italiano."
+}

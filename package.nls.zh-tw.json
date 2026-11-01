@@ -1,0 +1,19 @@
+{
+    "extension.description": "Antigravity 多帳號切換與配額管理助手",
+    "command.refreshAccounts": "刷新帳號列表",
+    "command.switchAccount": "切換帳號",
+    "command.refreshAccount": "刷新此帳號",
+    "command.refreshAllAccounts": "刷新所有帳號",
+    "command.openDashboard": "打開帳號管理面板",
+    "command.addAccount": "添加帳號",
+    "command.openSwitchLogs": "Antigravity Cockpit: 打開帳號切換日誌目錄",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: 環境自檢",
+    "config.autoRefreshInterval.description": "自動刷新帳戶配額時間間隔（分鐘）。設置為 0 禁用自動刷新。",
+    "config.switchMode.description": "帳號切換模式：safe 僅切換插件內當前帳號並提示手動重啟 IDE；advanced 會調用外部代理進程執行 Kill → 注入數據庫 → 自動重啟 IDE 的完整流程。",
+    "config.databasePathOverride.description": "Antigravity IDE 全局狀態數據庫路徑覆蓋（留空則使用平台默認路徑）。示例：C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Windows 平台 Antigravity.exe 路徑覆蓋（留空則使用默認路徑 LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe）",
+    "config.antigravityExecutablePath.darwin.description": "macOS 平台 Antigravity.app 路徑覆蓋（留空則使用默認路徑 /Applications/Antigravity.app）",
+    "config.antigravityExecutablePath.linux.description": "Linux 平台 Antigravity 可執行文件路徑覆蓋（留空則嘗試多個常見路徑）",
+    "config.processWaitSeconds.description": "帳號切換時等待進程關閉/啟動的時間（秒）。低配置機器建議設置為 20-30 秒。",
+    "config.language.description": "介面顯示語言：'auto' 跟隨 VS Code 設置，支持中、英、日、韓、俄、法、西、德、意等。"
+}

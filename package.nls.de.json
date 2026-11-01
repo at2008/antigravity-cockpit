@@ -1,0 +1,19 @@
+{
+    "extension.description": "Assistent für den Antigravity Mehrfach-Account Wechsel und das Quotenmanagement",
+    "command.refreshAccounts": "Kontenliste aktualisieren",
+    "command.switchAccount": "Konto wechseln",
+    "command.refreshAccount": "Dieses Konto aktualisieren",
+    "command.refreshAllAccounts": "Alle Konten aktualisieren",
+    "command.openDashboard": "Account-Verwaltungspanel öffnen",
+    "command.addAccount": "Konto hinzufügen",
+    "command.openSwitchLogs": "Antigravity Cockpit: Protokollverzeichnis für den Kontowechsel öffnen",
+    "command.diagnoseEnvironment": "Antigravity Cockpit: Umgebungsdiagnose ausführen",
+    "config.autoRefreshInterval.description": "Zeitintervall (Minuten) für die automatische Aktualisierung der Quoteninformationen. Setzen Sie den Wert auf 0, um die automatische Aktualisierung zu deaktivieren.",
+    "config.switchMode.description": "Kontowechsel-Modus: 'safe' wechselt nur das aktuelle Konto im Plugin und fordert zum manuellen IDE-Neustart auf; 'advanced' ruft einen externen Proxy-Prozess auf, um den Kill → Datenbankinjektion → Automatischer IDE-Neustart-Flow auszuführen.",
+    "config.databasePathOverride.description": "Überschreibung des globalen Statusdatenbankpfads für die Antigravity IDE (leer lassen für den Standardpfad der Plattform). Beispiel: C:\\Users\\xxx\\AppData\\Roaming\\Antigravity\\User\\globalStorage\\state.vscdb",
+    "config.antigravityExecutablePath.win32.description": "Pfadüberschreibung für Antigravity.exe in Windows (leer lassen für den Standardpfad LOCALAPPDATA\\Programs\\Antigravity\\Antigravity.exe)",
+    "config.antigravityExecutablePath.darwin.description": "Pfadüberschreibung für Antigravity.app in macOS (leer lassen für den Standardpfad /Applications/Antigravity.app)",
+    "config.antigravityExecutablePath.linux.description": "Pfadüberschreibung für die Antigravity-Ausführungsdatei in Linux (leer lassen, um Standardpfade zu testen)",
+    "config.processWaitSeconds.description": "Wartezeit (Sekunden) für das Schließen/Starten des Prozesses während des Kontowechsels. Empfohlen werden 20–30 Sekunden für leistungsschwächere Rechner.",
+    "config.language.description": "Oberflächensprache: 'auto' folgt den VS Code Einstellungen, 'zh-cn' für Vereinfachtes Chinesisch, 'en' für Englisch, 'ja' für Japanisch, 'ko' für Koreanisch, 'ru' für Russisch, 'fr' für Französisch, 'es' für Spanisch, 'de' für Deutsch, 'it' für Italienisch."
+}
