@@ -1,0 +1,8 @@
+out/
+node_modules/
+.vscode-test/
+*.vsix
+scratch/
+
+# --- 本地开发临时目录 (不跟踪) ---
+tmp/
